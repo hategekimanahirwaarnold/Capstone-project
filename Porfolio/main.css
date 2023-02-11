@@ -1,0 +1,189 @@
+html {
+    font-size: 62.5%;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Playfair Display';
+    display: grid;
+    color: black;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 1330px;
+    padding: 0;
+    background: url("/img/background-all") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.img-side {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("/Home/img/colors-Rw.jfif") repeat;
+    background-attachment: fixed;
+    background-size: 25%;
+    top: 0;
+    bottom: 0;
+    width: 5em;
+    position: absolute;
+}
+
+.img-right {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("/Home/img/colors-Rw.jfif") repeat;
+    background-attachment: fixed;
+    background-size: 25%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 5em;
+    position: absolute;
+}
+.begin {
+    display: grid;
+    height: 16em;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 0 0em 0;
+    margin-top: 0em;
+}
+.nav-img {
+    background-image: url("/Home/img/colors-Rw.jfif");
+    width: 100%;
+    height: 2.3em;
+    margin: -2.5em 0 0 0;
+    padding: 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+    margin: 0 0 0 3em;
+    padding: .3em .6em;
+}
+
+.logo:hover {
+    background-color: #F8F8F8;
+ /*   box-shadow: 3px -3px gray; */
+    border-radius: .4em;
+    color: gray;
+} 
+
+nav {
+    margin-right: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0 0em 0 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: .5em .5em .5em .5em;
+}
+nav ul li a:hover {
+    background-color: #F8F8F8;
+/*    box-shadow: 2px -2px gray; */
+    border-radius: .3em;
+    color: gray;
+}
+
+.below-nav {
+    margin: -3.5em 0 2em 0;
+    display: flex;
+    margin-left: 31em;
+    text-align: center;
+}
+
+.left-side  {
+    display: grid;
+    grid-gap: 4em;
+    margin-right: 18em;
+}
+.top {
+    height: 22em;
+    width: 23em;
+    background-color: #D9D9D9;
+    margin: .5em 6em 0 1.5em;
+    border-radius: .3em;
+    box-shadow: -3px -4px gray;
+}
+.bottom {
+    height: 22em;
+    width: 23em;
+    background-color: #D9D9D9;
+    margin: -2.5em 0 0 1.5em;
+    border-radius: .3em;
+    box-shadow: -3px -4px gray;
+}
+.cycle {
+    height: 18em;
+    width: 19em;
+    background: url(/img/datamanager.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
+    margin: 1em 0 0 1.8em;
+}
+.p1 {
+    padding-top: .8em;
+    font-size: 1em;
+}
+.cycle-2 {
+    height: 18em;
+    width: 19em;
+    background: url(/img/WhatsApp\ Image\ 2022-09-03\ at\ 10.05.49\ PM.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
+    margin: 1em 0 0 1.8em;
+}
+.p2 {
+    padding-top: .8em;
+    font-size: 1em;
+}
+
+.right-side {
+    display: grid;
+    grid-gap: 3em;
+    text-align: center;
+}
+.cycle-3 {
+    height: 18em;
+    width: 19em;
+    background: url(/img/mypic.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
+    margin: 1em 0 0 1.8em;
+}
+.cycle-4 {
+    height: 18em;
+    width: 19em;
+    background: url(/img/myvideos.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
+    margin: 1em 0 0 1.8em;
+}

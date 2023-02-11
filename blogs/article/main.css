@@ -1,0 +1,206 @@
+html {
+    font-size: 62.5%;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Playfair Display';
+    display: grid;
+    color: black;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 1330px;
+    padding: 0;
+    background: url("/img/background-all") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.img-side {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("/Home/img/colors-Rw.jfif") repeat;
+    background-attachment: fixed;
+    background-size: 25%;
+    top: 0;
+    bottom: 0;
+    width: 5em;
+    position: absolute;
+}
+
+.img-right {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("/Home/img/colors-Rw.jfif") repeat;
+    background-attachment: fixed;
+    background-size: 25%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 5em;
+    position: absolute;
+}
+.begin {
+    display: grid;
+    height: 16em;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 0 0em 0;
+    margin-top: 0em;
+}
+.nav-img {
+    background-image: url("/Home/img/colors-Rw.jfif");
+    width: 100%;
+    height: 2.3em;
+    margin: -2.5em 0 0 0;
+    padding: 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+    margin: 0 0 0 3em;
+    padding: .3em .6em;
+}
+
+.logo:hover {
+    background-color: #F8F8F8;
+ /*   box-shadow: 3px -3px gray; */
+    border-radius: .4em;
+    color: gray;
+} 
+
+nav {
+    margin-right: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0 0em 0 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: .5em .5em .5em .5em;
+}
+nav ul li a:hover {
+    background-color: #F8F8F8;
+/*    box-shadow: 2px -2px gray; */
+    border-radius: .3em;
+    color: gray;
+}
+
+.below-nav {
+    background-image: url("/img/A\ book\ 2-my\ brand\ \(2\).jfif");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    border-radius: 2em;
+    background-size:cover;
+    max-width: 100em;
+    max-height: 53em;
+    height: 52em;
+    display: flex;
+    margin: -6em 0 0em 18.5em;
+    text-align: center;
+}
+
+.left-side  {
+    display: grid;
+    grid-gap: 1em;
+    margin: 3em 9em 1em 6em;
+    width: 38em;
+}
+time {
+    margin: 0 4em 0 0em;
+    font-size: 1.4rem;
+}
+figure img {
+    height: 14em;
+    width: 40em;
+    padding: 0;
+    margin: -2em 0 0 -3em; 
+    object-fit: cover;
+    border-radius: .7em;
+    border: solid;
+}
+article {
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.4em;
+    margin: -2em 2.5em 0 0em;
+}
+.like {
+    display: flex;
+    justify-content: space-around;
+}
+.left, .right {
+    display: flex;
+    justify-content: space-between;
+}
+.like img {
+    height: 2em;
+}
+button {
+    border: none;
+}
+
+.right-side {
+    display: grid;
+    margin: 4em 0em 1em 0em;
+}
+.first, .second {
+    display: flex;
+}
+
+.right-side img {
+    object-fit: cover;
+    height: 6em;
+    width: 6em;
+    margin: -2em 0 0 0;
+    border-radius: .7em;
+}
+input {
+    height: 4em;
+    width: 29em;
+    border: none;
+    margin: 0 0 0 2em;
+    border-radius: .8em;
+    font-size: .9em;
+}
+.right-side .second {
+    margin-top: -15em;
+}
+.right-side .comment {
+    margin: 0 0 0 1em;
+    text-align: center;
+    font-size: 1.2em;
+}
+.number-1, .number-2 {
+    padding: .8em 0 0 0;
+}
+.comment p {
+    line-height: 2em;
+    border: .1em solid;
+    height: 3em;
+    width: 22em;
+    border-radius: .5em;
+    background-color: rgb(226, 226, 225);
+}
+
+
+
