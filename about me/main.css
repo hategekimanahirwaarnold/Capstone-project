@@ -1,76 +1,85 @@
 html {
-    font-size: 62.5%;
     margin: 0px;
-    height: 100%;
-    width: 100%;
+    padding: 0px;
+    min-width: 300px;
 }
 
 body {
     font-family: 'Playfair Display';
     display: grid;
     color: black;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    max-width: 1330px;
+    margin: 0;
     padding: 0;
     background: url("/img/background-all") no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    min-width: 300px;
 }
 .img-side {
-    height: 100%;
-    margin: 0;
     padding: 0;
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
-    background-size: 25%;
-    top: 0;
+    background-size: 22%;
     bottom: 0;
-    width: 5em;
+    width: 3em;
     position: absolute;
+    height: 100%;
 }
 
 .img-right {
-    height: 100%;
-    margin: 0;
+    margin: 0 0 0px 0;
     padding: 0;
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
-    background-size: 25%;
-    top: 0;
+    background-size: 22%;
     bottom: 0;
     right: 0;
-    width: 5em;
+    width: 3em;
     position: absolute;
+    height: 100%;
 }
 .begin {
     display: grid;
-    height: 16em;
-    padding: 0;
+    height: 100px;
+    margin: 0px 0 0 0;
     margin: 0;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0em 0 0em 0;
+    padding: 20px 0 0em 0;
     margin-top: 0em;
 }
 .nav-img {
     background-image: url("/Home/img/colors-Rw.jfif");
     width: 100%;
-    height: 2.3em;
-    margin: -2.5em 0 0 0;
+    height: 1.5em;
+    margin: 0px 0 0 0;
     padding: 0;
+}
+#check {
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+#menu-icon {
+    font-size: 2.5em;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: none;
 }
 
 .logo {
     text-decoration: none;
     color: black;
-    font-size: 3em;
-    margin: 0 0 0 3em;
-    padding: .3em .6em;
+    font-size: 31px;
+    padding: 6px 20px;
+    margin: 0px 0px 0px 70px;
+    text-transform: uppercase;
 }
 
 .logo:hover {
@@ -78,6 +87,10 @@ header {
  /*   box-shadow: 3px -3px gray; */
     border-radius: .4em;
     color: gray;
+}
+.home {
+    font-size: 25px;
+    display: none;
 } 
 
 nav {
@@ -87,66 +100,62 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 4.1em;
-    margin: 0 0em 0 0;
+    gap: 50px;
+    margin: 0 30px 0 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding: .5em .5em .5em .5em;
+    font-size: 25px;
+    padding: 8px 9px;
+    border-radius: .3em;
 }
 nav ul li a:hover {
     background-color: #F8F8F8;
-/*    box-shadow: 2px -2px gray; */
-    border-radius: .3em;
     color: gray;
+}
+.active {
+    background-color: #F8F8F8;
 }
 .below-nav {
     background-image: url("/img/A\ book\ 2-my\ brand\ \(2\).jfif");
-    overflow: hidden;
     background-repeat: no-repeat;
-    border-radius: 2em;
+    border-radius: 1vw;
     background-size:cover;
-    background-color: blue;
-    max-width: 86em;
-    max-height: 60em;
+    background-position: center;
+    background-attachment: fixed;
+    width: 64vw;
+    height: 94%;
     display: flex;
-    margin: -5em 0 1em 25em;
+    margin: 0em 20% 1em 17vw;
+    opacity: 80%;
 }
 
 .left-side  { 
-    font-size: 2.7rem;
+    font-size: 1.95vw;
     text-align: center;
-    padding: 0 0 0 3em;
+    padding: 0 0 0 5.2vw;
+    line-height: 5vh;
 }
 .left-side  .content { 
-    width: 11em;
+    width: 22vw;
 }
 .right-side {
-    padding: 0 3em 0 -3em;
+    padding: 0 0vw 0 0;
 }  
 .right-side .content {
-    font-size: 2.5rem;
+    font-size: 1.75vw;
     text-align: center;
     width: 14em;
-    margin-left: 3em;
-}   
-.left-but {
-    margin: 0em 0 0 0;
-    width: 4em;
-    height: 3em;
-    margin: -1em 0 0 -20em;
-}
-.left-but p {
-    line-height: 13px;
+    margin-left: 9vw;
+    line-height: 4.5vh;
+    text-align: center;
 }
 .right-but {
-    margin: 0em 0 0 28em;
-    width: 4em;
-    height: 3em;
+    margin: -1em 0 0 29vw;
+    width: 5vw;
+    height: 6vh;
 }
 .right-but p {
     line-height: 13px;
@@ -154,11 +163,46 @@ nav ul li a:hover {
 button {
     border: none;
     border-radius: .8em;
-    background-color:#F8F8F8;
+    background-color:#d6d6d6;
+    color: rgb(2, 2, 2);
 }
 button:hover {
-    background-color:rgb(217, 219, 221);
+    background-color:gray;
 }
 
+@media (max-width: 1060px) {
+    nav ul {
+        gap: 1em;
+        margin-right: 0px;
+    }
+    nav ul li a {
+        font-size: 2.3vw;
+        padding: .3em;
+    }
+    .below-nav {
+        width: 80vw;
+        margin-left:10vw;
+    }
+    .right-side .content {
+        font-size: 2.3vw;
+        width: 32vw;
+        margin-left: 14vw;
+    }
+    .left-side  .content { 
+        width: 25vw;
+        font-size: 2.2vw;
+    }
+    header {
+        background-color: orange;
+    }
+    .logo {
+        font-size: 3.2vw;
+    }
+}
 
- 
+@media (max-width: 717px) {
+    
+    header {
+        background-color: red;
+    }
+}
