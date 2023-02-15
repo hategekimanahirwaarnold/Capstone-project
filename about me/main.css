@@ -152,22 +152,21 @@ nav ul li a:hover {
     line-height: 4.5vh;
     text-align: center;
 }
-.right-but {
-    margin: -1em 0 0 29vw;
-    width: 5vw;
-    height: 6vh;
-}
 .right-but p {
     line-height: 13px;
 }
 button {
+    float: right;
+    width: 5vw;
+    height: 6vh;
     border: none;
     border-radius: .8em;
-    background-color:#d6d6d6;
+    background-color: gray;
     color: rgb(2, 2, 2);
+    cursor: pointer;
 }
 button:hover {
-    background-color:gray;
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width: 1060px) {
@@ -192,17 +191,103 @@ button:hover {
         width: 25vw;
         font-size: 2.2vw;
     }
-    header {
-        background-color: orange;
-    }
     .logo {
         font-size: 3.2vw;
     }
+     .right-but {
+        border-radius: 1vw;
+        text-decoration: none;
+        width: 7.5vw;
+     }    
 }
-
 @media (max-width: 717px) {
-    
+     .img-right, .img-side {
+        opacity:20%;
+        width: 2.3em;
+    }
+    .nav-img {
+        background: url(/img/colors-Rw\ 3.jfif);
+        margin: -37em 0 0 4em;
+        height: 6.5em;
+        width: 80vw;
+        opacity: 10%;
+        position: relative;
+    }
+    .logo {
+        display: none;
+    }
+   
     header {
-        background-color: red;
+        display: grid;
+        gap: 2em;
+    }
+    nav ul {
+        background-image: url("/img/background-all");
+        object-fit: contain;
+        display: grid;
+        gap: 3em;
+        position: relative;
+        margin-top: 0px;
+        padding:  30px 20px 30px 20px;
+        transition: all .5s ease;
+        left: -100%;
+        width: 50vw;
+        height: 70vh;
+    }
+    nav ul li{
+        margin: auto;
+    }
+    nav ul li a{
+        font-size: 4vw;
+    }
+    #menu-icon {
+        color: black;
+        font-size: 40px;
+        margin-left: 30px;
+        cursor: pointer;
+        transition: all .5s ease;
+        width: 30px;
+        display: inline;
+    }
+    .home {
+        display: inline;
+    }
+    #check:checked ~ nav ul {
+        left: 0;
+      }
+    #check:checked ~ #menu-icon {
+        rotate: -90deg;
+    }
+    .below-nav {
+        display: grid;
+        gap: 1em;
+        opacity: 100%;
+        background: none;
+    }
+   
+    .left-side .content {
+        text-align: center;
+        width: 75vw;
+        margin: -1em 0 0 -4vw;
+        gap: 0em;
+        font-size: 4vw;
+        line-height: 8vh;
+        padding: 0;
+    }
+    .right-side .content {
+        text-align: center;
+        width: 75vw;
+        margin: 0em 0 0 0vw;
+        gap: 0em;
+        font-size: 4vw;
+        line-height: 8vh;
+        padding: 0;
+    }
+    .right-but {
+        width: 6em;
+        height: 3em;
+        font-size: 1rem;
+        margin: 0 1vw 0 0vw;
+        float: right;
     }
 }
