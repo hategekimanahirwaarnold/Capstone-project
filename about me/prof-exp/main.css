@@ -12,6 +12,7 @@ body {
     padding: 0;
     background: url("/img/background-all") no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -23,9 +24,10 @@ body {
     background-attachment: fixed;
     background-size: 22%;
     bottom: 0;
+    top: 0;
     width: 3em;
     position: absolute;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .img-right {
@@ -34,11 +36,12 @@ body {
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
     background-size: 22%;
+    top: 0;
     bottom: 0;
     right: 0;
     width: 3em;
     position: absolute;
-    height: 100%;
+    min-height: 100%;
 }
 .begin {
     display: grid;
@@ -126,105 +129,266 @@ nav ul li a:hover {
     width: 64vw;
     height: 94%;
     display: flex;
-    margin: 0em 20% 1em 17vw;
+    margin: 0em 20% 0vh 19vw;
     opacity: 80%;
 }
 
 .left-side  { 
-    padding: 0 0 0 0em;
     display: grid;
-    gap: 0em;
     text-align: center;
+    height: 79vh;
 }
 .left-side  .content { 
     width: 24em;
 }
 h2 {
-    font-size: 1.6rem;
-    padding: 0em 0 0 0;
+    font-size: 1.6vw;
+    margin: 2vh 0 5vh  0vw;
 }
 main {
     display: flex;
+    gap: 3vw;
     text-align: center;
     padding: 0;
-    justify-content: space-between;
-    margin: 0 0 0 1em;
+    margin: 0 0 0 2vw;
 }
 
 .content .left {
     display: grid;
-    font-size: .9rem;
-    width: 15em;
-    margin: -1em 0 0 0em;
+    font-size: 1vw;
+    width: 16vw;
+    margin: -3vh 0 0 0em;
     line-height: 1.3em;
+    line-height: 3.5vh;
 }
 .content .left h3 {
-    font-size: 1.1rem;
-    line-height: .8em;
+    font-size: 1.2vw;
+    line-height: 2.6vh;
 }
 .right {
     display: grid;
 }
 
 .right-1 {
-    height: 6.5em;
-    width: 6.4em;
+    height: 14.8vh;
+    width: 7.4vw;
     background-color: #D9D9D9;
     margin: .5em 0 0 0em;
-    border-radius: .3em;
+    border-radius: .7vw;
     box-shadow: -3px -4px gray;
 }
 
 .cycle-1 {
-    height: 5.6em;
-    width: 5.5em;
     background: url(/img/datamanager.jfif);
     background-size: cover;
     background-position: center;
     border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
-    margin: 0.4em .4em;
+    margin:.5vh 0 0 .3vw;
+    height: 13.5vh;
+    width: 6.8vw;
 }
 .cycle-2 {
-    height: 5.6em;
-    width: 5.5em;
     background: url(/img/Rise.png);
     background-size: cover;
     background-position: center;
     border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
-    margin: 0.4em .4em;
+    margin:.5vh 0 0 .3vw;
+    height: 13.5vh;
+    width: 6.8vw;
 }
 .cycle-3 {
-    height: 5.6em;
-    width: 5.5em;
     background: url(/img/RwMO-logo.png);
     background-size: cover;
     background-position: center;
-    padding: 0;
     border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
-    margin: 0.4em .4em;
+    margin:.5vh 0 0 .3vw;
+    height: 13.5vh;
+    width: 6.8vw;
 }
 .left-but {
-    margin: 0em 0 0 0;
-    width: 4em;
-    height: 3em;
-    background-color:#d6d6d6;
-    margin: 0em 0 0 -19em;
-}
-
-button:hover {
+    width: 5vw;
+    height: 4vh;
+    border-radius: .8em;
     background-color: gray;
-}
-.left-but p {
-    line-height: 13px;
-}
-.right-but {
-    margin: 1em 0 0 28em;
-    width: 4em;
-    height: 3em;
-}
-.right-but p {
-    line-height: 13px;
+    margin: 0 0 0 1vw;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 1.6vh 0 0 0;
 }
 
+.left-but:hover {
+    color: white;
+}
+@media (max-width: 1060px) {
+    nav ul {
+        gap: 1em;
+        margin-right: 0px;
+    }
+    nav ul li a {
+        font-size: 2.3vw;
+        padding: .3em;
+    }
+    .below-nav {
+        width: 80vw;
+        margin-left:12vw;
+    }
+    main {
+        gap: 5vw;
+    }
+    .content .left {
+        display: grid;
+        font-size: 1.3vw;
+        width: 19vw;
+        margin: -3vh 0 0 0em;
+        line-height: 1.3em;
+        line-height: 3.5vh;
+    }
+    .content .left h3 {
+        font-size: 1.5vw;
+        line-height: 2.6vh;
+    }
+    h2 {
+        font-size: 1.8vw;
+        margin-left: -9vw;
+    }
+    .logo {
+        font-size: 3.2vw;
+    }
+    .right-1 {
+        width: 8.4vw;
+        border-radius: .7vw;
+    }
+    
+    .cycle-1, .cycle-2, .cycle-3 {
+        width: 7.7vw;
+    }
+    
+    .left-but {
+        margin: 0 0 0 1vw;
+        width: 6vw;
+        height: 4vh;
+        border-radius: 1vw;
+        text-decoration: none;
+        padding: 1.5vh 1.2vw 0vh 1.2vw;
+    }
+}
 
- 
+@media (max-width: 717px) {
+    
+    header {
+    }
+     .img-right, .img-side {
+        opacity:20%;
+        width: 2.3em;
+        height: 120vh;
+    }
+    .nav-img {
+        background: url(/img/colors-Rw\ 3.jfif);
+        margin: -37em 0 0 4em;
+        height: 6.5em;
+        width: 80vw;
+        opacity: 10%;
+        position: relative;
+    }
+    .logo {
+        display: none;
+    }
+   
+    header {
+        display: grid;
+        gap: 2em;
+    }
+    nav ul {
+        background-image: url("/img/background-all");
+        object-fit: contain;
+        display: grid;
+        gap: 3em;
+        position: relative;
+        margin-top: 0px;
+        padding:  30px 20px 30px 20px;
+        transition: all .5s ease;
+        left: -100%;
+        width: 50vw;
+        height: 70vh;
+    }
+    nav ul li{
+        margin: auto;
+    }
+    nav ul li a{
+        font-size: 4vw;
+    }
+    #menu-icon {
+        color: black;
+        font-size: 40px;
+        margin-left: 30px;
+        cursor: pointer;
+        transition: all .5s ease;
+        width: 30px;
+        display: inline;
+    }
+    .home {
+        display: inline;
+    }
+    #check:checked ~ nav ul {
+        left: 0;
+      }
+    #check:checked ~ #menu-icon {
+        rotate: -90deg;
+    }
+    .below-nav {
+        display: grid;
+        gap: 4em;
+        opacity: 100%;
+        background: none;
+        margin: auto;
+    }
+    h2 {
+        font-size: 4vw;
+        margin: 0 0 1em 8vw;
+        width: 100%;
+    }
+   
+    main {
+        text-align: center;
+        gap: 10vw;
+        margin: auto;
+        width: 80vw;
+    }
+    
+    .content .left {
+        display: grid;
+        font-size: 2.9vw;
+        width: 50vw;
+        margin: -3vh 0 0 0em;
+        line-height: 1.6em;
+    }
+    .content .left h3 {
+        font-size: 3vw;
+        line-height: 3.6vh;
+    }
+    .right {
+        gap: 1.3em;
+    }
+    .right-1 {
+        width: 18.4vw;
+        height: 7.7em;
+    }
+    
+    .cycle-1, .cycle-2, .cycle-3 {
+        width: 17vw;
+        height: 7em;
+        margin: .3em 0 0 .7vw;
+    }
+    .left-but {
+        border-radius: 1vw;
+        text-decoration: none;
+        width: 8vw;
+        float: left;
+        padding: .5em .6em;
+        margin: 2em 0 0 0;
+        font-size: 2.5vw;
+    }
+    
+}
