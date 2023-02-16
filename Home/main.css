@@ -362,11 +362,20 @@ nav ul li a:hover {
     }
     .nav-img {
         background: url(/img/colors-Rw\ 3.jfif);
-        margin: -37em 0 0 4em;
+        margin: -37em 0 0 4.7em;
         height: 6.5em;
         width: 80vw;
         opacity: 10%;
         position: relative;
+    }
+    #menu-icon {
+        color: black;
+        font-size: 40px;
+        margin-left: 38px;
+        cursor: pointer;
+        transition: all .5s ease;
+        width: 30px;
+        display: inline;
     }
     .logo {
         display: none;
@@ -395,15 +404,7 @@ nav ul li a:hover {
     nav ul li a{
         font-size: 4vw;
     }
-    #menu-icon {
-        color: black;
-        font-size: 40px;
-        margin-left: 30px;
-        cursor: pointer;
-        transition: all .5s ease;
-        width: 30px;
-        display: inline;
-    }
+    
     .home {
         display: inline;
     }
