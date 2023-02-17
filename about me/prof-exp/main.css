@@ -282,7 +282,7 @@ main {
      .img-right, .img-side {
         opacity:20%;
         width: 2.3em;
-        height: 120vh;
+        background-attachment: fixed;
     }
     .nav-img {
         background: url(/img/colors-Rw\ 3.jfif);

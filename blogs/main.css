@@ -1,83 +1,99 @@
 html {
-    font-size: 62.5%;
     margin: 0px;
-    height: 100%;
-    width: 100%;
+    padding: 0px;
+    min-width: 300px;
 }
 
 body {
     font-family: 'Playfair Display';
     display: grid;
     color: black;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    max-width: 1330px;
+    margin: 0;
     padding: 0;
     background: url("/img/background-all") no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    min-width: 300px;
 }
 .img-side {
-    height: 100%;
-    margin: 0;
     padding: 0;
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
-    background-size: 25%;
-    top: 0;
+    background-size: 22%;
     bottom: 0;
-    width: 5em;
+    top: 0;
+    width: 3em;
     position: absolute;
+    height: 100%;
 }
 
 .img-right {
-    height: 100%;
-    margin: 0;
+    margin: 0 0 0px 0;
     padding: 0;
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
-    background-size: 25%;
+    background-size: 22%;
     top: 0;
     bottom: 0;
     right: 0;
-    width: 5em;
+    width: 3em;
     position: absolute;
+    height: 100%
 }
 .begin {
     display: grid;
-    height: 16em;
-    padding: 0;
+    height: 100px;
+    margin: 0px 0 0 0;
     margin: 0;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0em 0 0em 0;
+    padding: 20px 0 0em 0;
     margin-top: 0em;
 }
 .nav-img {
     background-image: url("/Home/img/colors-Rw.jfif");
     width: 100%;
-    height: 2.3em;
-    margin: -2.5em 0 0 0;
+    height: 1.5em;
+    margin: 0px 0 0 0;
     padding: 0;
+}
+#check {
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+#menu-icon {
+    font-size: 2.5em;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: none;
 }
 
 .logo {
     text-decoration: none;
     color: black;
-    font-size: 3em;
-    margin: 0 0 0 3em;
-    padding: .3em .6em;
+    font-size: 31px;
+    padding: 6px 20px;
+    margin: 0px 0px 0px 70px;
+    text-transform: uppercase;
+    border-radius: .4em;
+    transition: all .3s;
 }
 
 .logo:hover {
-    background-color: #F8F8F8;
+    color: white;
  /*   box-shadow: 3px -3px gray; */
-    border-radius: .4em;
-    color: gray;
+}
+.home {
+    font-size: 25px;
+    display: none;
 } 
 
 nav {
@@ -87,138 +103,287 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 4.1em;
-    margin: 0 0em 0 0;
+    gap: 50px;
+    margin: 0 30px 0 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding: .5em .5em .5em .5em;
+    font-size: 25px;
+    padding: 8px 9px;
+    border-radius: .3em;
+    transition: all .3s;
 }
 nav ul li a:hover {
-    background-color: #F8F8F8;
-/*    box-shadow: 2px -2px gray; */
-    border-radius: .3em;
-    color: gray;
+    color: white;
 }
-
+.active {
+    background-color: #F8F8F8;
+    color: black;
+}
+.active:hover {
+    color: black;
+}
 .below-nav {
     background-image: url("/img/A\ book\ 2-my\ brand\ \(2\).jfif");
-    overflow: hidden;
     background-repeat: no-repeat;
-    border-radius: 2em;
+    border-radius: 1vw;
     background-size:cover;
-    background-color: blue;
-    max-width: 86em;
-    max-height: 60em;
+    background-position: center;
+    background-attachment: fixed;
+    width: 64vw;
+    height: 83vh;
     display: flex;
-    margin: -5em 0 1em 25em;
+    margin: auto;
+    opacity: 90%;
+    justify-content: space-evenly;
+    gap: 6vw;
+}
+.left-side  {
+    display: grid;
+    gap: 1vw;
+}
+.left-side .top {
+    height: 38vh;
+    width: 20vw;
+    background-color: #D9D9D9;
+    margin: 1vw auto auto auto;
+    border-radius: .5vw;
+    box-shadow: -3px -4px gray;
+    display: grid;
+    text-align: center;
+}
+.left-side .bottom {
+    height: 38vh;
+    width: 20vw;
+    background-color: #D9D9D9;
+    margin: auto auto auto auto;
+    border-radius: .5vw;
+    box-shadow: -3px -4px gray;
+    display: grid;
+    text-align: center;
+}
+ .right-side .top {
+    height: 36vh;
+    width: 20vw;
+    background-color: #D9D9D9;
+    margin: auto auto auto auto;
+    border-radius: .5vw;
+    box-shadow: -3px -4px gray;
+    display: grid;
+    text-align: center;
+}
+.right-side .bottom {
+    height: 36vh;
+    width: 20vw;
+    background-color: #D9D9D9;
+    margin: auto auto auto auto;
+    border-radius: .5vw;
+    box-shadow: -3px -4px gray;
+    display: grid;
     text-align: center;
 }
 
-.left-side  {
-    display: grid;
-    grid-gap: 1em;
-    margin: 3em 6em 1em 7em;
-}
-.left-side .top {
-    height: 20em;
-    width: 28em;
-    background-color: #D9D9D9;
-    margin: .5em 6em 0 1.5em;
-    border-radius: .3em;
-    box-shadow: -3px -4px gray;
-    display: grid;
-}
-.bottom {
-    height: 20em;
-    width: 28em;
-    background-color: #D9D9D9;
-    margin: .5em 6em 0 1.5em;
-    border-radius: .3em;
-    box-shadow: -3px -4px gray;
-    display: grid;
-}
- .right-side .top {
-    height: 20em;
-    width: 28em;
-    background-color: #D9D9D9;
-    margin: .5em 6em 0 1.5em;
-    border-radius: .3em;
-    box-shadow: 3px -4px gray;
-    display: grid;
-}
-.right-side .bottom {
-    height: 20em;
-    width: 28em;
-    background-color: #D9D9D9;
-    margin: .5em 6em 0 1.5em;
-    border-radius: .3em;
-    box-shadow: 3px -4px gray;
-    display: grid;
-}
-
 .below-nav header {
-    padding: .8em 0 .7em 7em;
+    margin: -.8vw auto auto auto;
+    font-size: 1.1vw;
+    font-weight: bold;
 }
 .cycle {
-    height: 7em;
-    width: 25.8em;
+    height: 12vh;
+    width: 18vw;
     background: url(/img/datamanager.jfif);
     background-size: cover;
     background-position: center;
     padding: 0;
-    margin: 0em 0 0 1em;
-    border: .1em solid black;
+    margin: auto;
+    border: .2vw solid black;
+}
+.p, .p2, .below-nav a {
+    margin: 0vw 1vw;
+    font-size: 1vw;
 }
 .below-nav a {
-    padding: 0em 0 1em 0em;
-}
-.p {
-    padding: 0em 1em 0em 1em;
-    font-size: 1em;
+    margin: -1vw auto 0 auto;
 }
 .cycle-2 {
-    height: 7em;
-    width: 25.8em;
+    height: 12vh;
+    width: 18vw;
     background: url(/img/datamanager.jfif);
     background-size: cover;
     background-position: center;
     padding: 0;
-    margin: 0em 0 0 1em;
-    border: .1em solid black;
+    margin: auto;
+    border: .2vw solid black;
 }
-.p2 {
-    padding-top: .8em;
-    font-size: 1em;
-}
-
 .right-side {
     display: grid;
-    grid-gap: 1em;
-    grid-gap: 1em;
-    margin: 3em 0em 1em 0em;
+    gap: 0vw;
 }
 .cycle-3 {
-    height: 7em;
-    width: 25.8em;
+    height: 12vh;
+    width: 18vw;
     background: url(/img/datamanager.jfif);
     background-size: cover;
     background-position: center;
     padding: 0;
-    margin: 0em 0 0 1em;
-    border: .1em solid black;
+    margin: auto;
+    border: .2vw solid black;
 }
 .cycle-4 {
-    height: 7em;
-    width: 25.8em;
+    height: 12vh;
+    width: 18vw;
     background: url(/img/datamanager.jfif);
     background-size: cover;
     background-position: center;
     padding: 0;
-    margin: 0em 0 0 1em;
-    border: .1em solid black;
+    margin: auto;
+    border: .2vw solid black;
+}
+
+@media (max-width: 1060px) {
+    nav ul {
+        gap: 1em;
+        margin-right: 0px;
+    }
+    nav ul li a {
+        font-size: 2.3vw;
+        padding: .3em;
+    }
+    .img-side, .img-right {
+        width: 5vw;
+    }
+    .logo {
+        font-size: 3.2vw;
+    }
+    .below-nav {
+        width: 75vw;
+    }
+    .left-side .top,.right-side .top{
+        height: 35vh;
+        width: 26vw;
+        margin: 2vw auto auto auto;
+    }
+    .left-side .bottom, .right-side .bottom {
+        height: 35vh;
+        width: 26vw;
+        margin: 0vw auto 2vw auto;
+    }
+    
+    .below-nav header {
+        margin: -.8vw auto auto auto;
+        font-size: 1.4vw;
+    }
+    .cycle, .cycle-2, .cycle-3, .cycle-4 {
+        height: 10vh;
+        width: 24vw;
+    }
+    .p, .p2, .below-nav a {
+        margin: 0vw 1vw;
+        font-size: 1.17vw;
+    }
+    .below-nav a {
+        margin: -1vw auto 0 auto;
+    }
+    
+}
+
+@media (max-width: 717px) {
+    
+    .img-right, .img-side {
+        opacity:20%;
+        width: 2.3em;
+        top: 0;
+        bottom: 0;
+        background-attachment: fixed;
+    }
+    .nav-img {
+        background: url(/img/colors-Rw\ 3.jfif);
+        margin: -37em 0 0 4.7em;
+        height: 6.5em;
+        width: 80vw;
+        opacity: 10%;
+        position: relative;
+    }
+    .logo {
+        display: none;
+    }
+   
+    header {
+        display: grid;
+        gap: 2em;
+    }
+    nav ul {
+        background-image: url("/img/background-all");
+        object-fit: contain;
+        display: grid;
+        gap: 0em;
+        position: relative;
+        margin-top: 0px;
+        padding:  30px 20px 30px 20px;
+        transition: all .5s ease;
+        left: -100%;
+        width: 50vw;
+        height: 70vh;
+    }
+    nav ul li{
+        margin: auto;
+    }
+    nav ul li a{
+        font-size: 4vw;
+    }
+    #menu-icon {
+        color: black;
+        font-size: 40px;
+        margin-left: 38px;
+        cursor: pointer;
+        transition: all .5s ease;
+        width: 30px;
+        display: inline;
+    }
+    .home {
+        display: inline;
+    }
+    #check:checked ~ nav ul {
+        left: 0;
+      }
+    #check:checked ~ #menu-icon {
+        rotate: -90deg;
+    }
+    .below-nav {
+        display: grid;
+        gap: 6vw;
+        opacity: 100%;
+        background: none;
+        margin: auto;
+        width: 80vw;
+        overflow: auto;
+    }
+    .left-side, .right-side {
+        gap: 6vw;
+    }
+    .left-side .top,.right-side .top, .left-side .bottom, .right-side .bottom{
+        height: 67vw;
+        width: 63vw;
+        margin: auto;
+    }
+    .left-side .top {
+        margin-top: 1vw;
+    }
+    .below-nav header {
+        margin: -.8vw auto auto auto;
+        font-size: 3.1vw;
+    }
+    .cycle, .cycle-2, .cycle-3, .cycle-4 {
+        height: 18vw;
+        width: 55vw;
+    }
+    .p, .p2, .below-nav a {
+        margin: 0vw 2vw;
+        font-size: 3vw;
+    }
+    .below-nav a {
+        margin: -1vw auto 0 auto;
+    }
 }

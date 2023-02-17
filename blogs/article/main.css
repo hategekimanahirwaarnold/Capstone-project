@@ -1,83 +1,99 @@
 html {
-    font-size: 62.5%;
     margin: 0px;
-    height: 100%;
-    width: 100%;
+    padding: 0px;
+    min-width: 300px;
 }
 
 body {
     font-family: 'Playfair Display';
     display: grid;
     color: black;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    max-width: 1330px;
+    margin: 0;
     padding: 0;
     background: url("/img/background-all") no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    min-width: 300px;
 }
 .img-side {
-    height: 100%;
-    margin: 0;
     padding: 0;
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
-    background-size: 25%;
-    top: 0;
+    background-size: 22%;
     bottom: 0;
-    width: 5em;
+    top: 0;
+    width: 3em;
     position: absolute;
+    height: 100%;
 }
 
 .img-right {
-    height: 100%;
-    margin: 0;
+    margin: 0 0 0px 0;
     padding: 0;
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
-    background-size: 25%;
+    background-size: 22%;
     top: 0;
     bottom: 0;
     right: 0;
-    width: 5em;
+    width: 3em;
     position: absolute;
+    height: 100%
 }
 .begin {
     display: grid;
-    height: 16em;
-    padding: 0;
+    height: 100px;
+    margin: 0px 0 0 0;
     margin: 0;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0em 0 0em 0;
+    padding: 20px 0 0em 0;
     margin-top: 0em;
 }
 .nav-img {
     background-image: url("/Home/img/colors-Rw.jfif");
     width: 100%;
-    height: 2.3em;
-    margin: -2.5em 0 0 0;
+    height: 1.5em;
+    margin: 0px 0 0 0;
     padding: 0;
+}
+#check {
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+#menu-icon {
+    font-size: 2.5em;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: none;
 }
 
 .logo {
     text-decoration: none;
     color: black;
-    font-size: 3em;
-    margin: 0 0 0 3em;
-    padding: .3em .6em;
+    font-size: 31px;
+    padding: 6px 20px;
+    margin: 0px 0px 0px 70px;
+    text-transform: uppercase;
+    border-radius: .4em;
+    transition: all .3s;
 }
 
 .logo:hover {
-    background-color: #F8F8F8;
+    color: white;
  /*   box-shadow: 3px -3px gray; */
-    border-radius: .4em;
-    color: gray;
+}
+.home {
+    font-size: 25px;
+    display: none;
 } 
 
 nav {
@@ -87,120 +103,326 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 4.1em;
-    margin: 0 0em 0 0;
+    gap: 50px;
+    margin: 0 30px 0 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding: .5em .5em .5em .5em;
+    font-size: 25px;
+    padding: 8px 9px;
+    border-radius: .3em;
+    transition: all .3s;
 }
 nav ul li a:hover {
-    background-color: #F8F8F8;
-/*    box-shadow: 2px -2px gray; */
-    border-radius: .3em;
-    color: gray;
+    color: white;
 }
-
+.active {
+    background-color: #F8F8F8;
+    color: black;
+}
+.active:hover {
+    color: black;
+}
 .below-nav {
     background-image: url("/img/A\ book\ 2-my\ brand\ \(2\).jfif");
-    overflow: hidden;
     background-repeat: no-repeat;
-    border-radius: 2em;
     background-size:cover;
-    max-width: 100em;
-    max-height: 53em;
-    height: 52em;
+    background-position: center;
+    background-attachment: fixed;
+    width: 75vw;
+    height: 83vh;
     display: flex;
-    margin: -6em 0 0em 18.5em;
-    text-align: center;
+    margin: auto;
+    opacity: 96%;
+    border-radius: .3vw;
+    justify-content: space-evenly;
+    box-shadow: -.1vw -.1vw 0.5vw 0vw gray;
+}
+.left-side  {
+    width: 40vw;
+    word-wrap: break-word;
+    display: grid;
+    grid-gap: 1vw;
+    margin: 0 auto;
+    height: 80vh;
+    overflow: auto;
+}
+.left-side header {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1vw;
+    width: 32vw;
+    margin: auto;
+    height: 3vh;
 }
 
-.left-side  {
-    display: grid;
-    grid-gap: 1em;
-    margin: 3em 9em 1em 6em;
-    width: 38em;
-}
-time {
-    margin: 0 4em 0 0em;
-    font-size: 1.4rem;
-}
 figure img {
-    height: 14em;
-    width: 40em;
+    height: 21vh;
+    width: 32vw;
     padding: 0;
-    margin: -2em 0 0 -3em; 
+    margin: 0 auto; 
     object-fit: cover;
-    border-radius: .7em;
+    border-radius: .7vw;
     border: solid;
 }
 article {
-    text-align: center;
-    font-size: 1.35rem;
-    line-height: 1.4em;
-    margin: -2em 2.5em 0 0em;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    margin: auto;
+    width: 33vw;
+}
+
+.right-side {
+    display: block;
+    margin: 0;
+    overflow: auto;
+    width: 35vw;
+}
+.first, .second {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-side img {
+    object-fit: cover;
+    height: 5vw;
+    width: 5vw;
+    margin: 1vw auto;
+    border-radius: .4vw;
+    box-shadow: -.1vw -.1vw 0.2vw 0vw black;
+}
+input {
+    height: 4vw;
+    width: 22.8vw;
+    border: none;
+    margin: auto 2vw -.5vw 0vw;
+    border-radius: .3vw;
+    font-size: 1vw;
+}
+.right-side .comment {
+    height: fit-content;
+    width: 23vw;
+    border: none;
+    margin: auto 2vw -.5vw 0vw;
+    word-wrap: break-word;
+    border-radius: .3vw;
+    font-size: 1.1vw;
+    background-color: rgb(202, 202, 201);
+}
+.comment p {
+    line-height: 1.5vw;
+    padding: 0vw 1vw ;
+}
+
+.number-1, .number-2 {
+    padding: 0;
+    height: 1em;
 }
 .like {
+    width: 33vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .left, .right {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .like img {
     height: 2em;
 }
 button {
     border: none;
+    background: none;
+}
+@media (max-width: 1060px) {
+    nav ul {
+        gap: 1em;
+        margin-right: 0px;
+    }
+    nav ul li a {
+        font-size: 2.3vw;
+        padding: .3em;
+    }
+    .img-side, .img-right {
+        width: 5vw;
+    }
+    .logo {
+        font-size: 3.2vw;
+    }
+    .below-nav {
+        width: 82vw;
+        height: 78vh;
+        margin: 1vw auto;
+    } 
+    .left-side {
+        height: 97%;
+        width: 47vw;
+        margin-left: -2vw;
+        overflow: auto;
+    }
+    .left-side header {
+        font-size: 1.3vw;
+        justify-content: space-around;
+        width: 41vw;
+    }
+    article {
+        font-size: 1.5vw;
+        margin-top: -2vw;
+        line-height: 1.9vw;
+        width: 35vw;
+    }
+    .like {
+        width: 43vw;
+        margin: 1vw auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+   figure img {
+    width: 32vw;
+    height: 15vw;
+    margin: 0;
+   }
+   .right-side img {
+       object-fit: cover;
+       height: 6vw;
+       width: 6vw;
+       margin: 2vw auto;
+   }
+   input {
+       font-size: 1.2vw;
+   }
+   .right-side .comment {
+       font-size: 1.3vw;
+   }
 }
 
-.right-side {
-    display: grid;
-    margin: 4em 0em 1em 0em;
-}
-.first, .second {
-    display: flex;
+@media (max-width: 717px) {
+    
+     .img-right, .img-side {
+        opacity:20%;
+        width: 2.3em;
+        top: 0;
+        bottom: 0;
+        height: 210vw;
+    }
+    .nav-img {
+        background: url(/img/colors-Rw\ 3.jfif);
+        margin: -37em 0 0 4.7em;
+        height: 6.5em;
+        width: 80vw;
+        opacity: 10%;
+        position: relative;
+    }
+    .logo {
+        display: none;
+    }
+   
+    header {
+        display: grid;
+        gap: 2em;
+    }
+    nav ul {
+        background-image: url("/img/background-all");
+        object-fit: contain;
+        display: grid;
+        gap: 0em;
+        position: relative;
+        margin-top: 0px;
+        padding:  30px 20px 30px 20px;
+        transition: all .5s ease;
+        left: -100%;
+        width: 50vw;
+        height: 70vh;
+    }
+    nav ul li{
+        margin: auto;
+    }
+    nav ul li a{
+        font-size: 4vw;
+    }
+    #menu-icon {
+        color: black;
+        font-size: 40px;
+        margin-left: 38px;
+        cursor: pointer;
+        transition: all .5s ease;
+        width: 30px;
+        display: inline;
+    }
+    .home {
+        display: inline;
+    }
+    #check:checked ~ nav ul {
+        left: 0;
+      }
+    #check:checked ~ #menu-icon {
+        rotate: -90deg;
+    }
+    .below-nav {
+        box-shadow: none;
+        display: block;
+        opacity: 100%;
+        background: none;
+        margin: 0 auto;
+        width: 87vw;
+        height: 100vh;
+    }
+    .left-side {
+        height: 120vw;
+        width: 82vw;
+        margin: auto;
+    }
+    .left-side header {
+        display: grid;
+        font-size: 3.5vw;
+        text-align: center;
+        gap: 1vw;
+        width: 73vw;
+        height: fit-content;
+    } 
+   figure img {
+    width: 63vw;
+    height: 30vw;
+    margin: 0;
+   }
+    article {
+        font-size: 3.3vw;
+        margin-top: -2vw;
+        line-height: 4.5vw;
+        width: 79vw;
+    }
+    .like {
+        width: 43vw;
+        margin: 1vw auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-side {
+        width: 80vw;
+        height: 50vw;
+        margin: auto;
+    }
+   .right-side img {
+       object-fit: cover;
+       height: 11vw;
+       width: 11vw;
+       margin: 3vw auto;
+   }
+   input {
+       font-size: 2.4vw;
+       height: 8vw;
+       width: 56vw;
+   }
+   .right-side .comment {
+    font-size: 2.8vw;
+    height: 8vw;
+    width: 56vw;
+   }
+    
 }
 
-.right-side img {
-    object-fit: cover;
-    height: 6em;
-    width: 6em;
-    margin: -2em 0 0 0;
-    border-radius: .7em;
-}
-input {
-    height: 4em;
-    width: 29em;
-    border: none;
-    margin: 0 0 0 2em;
-    border-radius: .8em;
-    font-size: .9em;
-}
-.right-side .second {
-    margin-top: -15em;
-}
-.right-side .comment {
-    margin: 0 0 0 1em;
-    text-align: center;
-    font-size: 1.2em;
-}
-.number-1, .number-2 {
-    padding: .8em 0 0 0;
-}
-.comment p {
-    line-height: 2em;
-    border: .1em solid;
-    height: 3em;
-    width: 22em;
-    border-radius: .5em;
-    background-color: rgb(226, 226, 225);
-}
 
 
 

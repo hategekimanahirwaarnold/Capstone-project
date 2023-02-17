@@ -322,7 +322,7 @@ nav ul li a:hover {
         width: 2.3em;
         top: 0;
         bottom: 0;
-        height: 285vh;
+        background-attachment: fixed;
     }
     .nav-img {
         background: url(/img/colors-Rw\ 3.jfif);

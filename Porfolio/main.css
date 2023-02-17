@@ -318,7 +318,7 @@ nav ul li a:hover {
         width: 2.3em;
         top: 0;
         bottom: 0;
-        height: 210vw;
+        background-attachment: fixed;
     }
     .nav-img {
         background: url(/img/colors-Rw\ 3.jfif);
@@ -326,7 +326,6 @@ nav ul li a:hover {
         height: 6.5em;
         width: 80vw;
         opacity: 10%;
-        position: relative;
     }
     .logo {
         display: none;
@@ -388,28 +387,21 @@ nav ul li a:hover {
     .left-side, .right-side  {
         gap: 6vw;
     }
-    .top {
-        margin: 0vw 0 0 0;
-        height: 41vw;
-        width: 41vw;
-        border-radius: .8vw;
-    }
-    .bottom {
-        margin: 0vw 0 0 0;
-        height: 41vw;
-        width: 41vw;
-        border-radius: .8vw;
+    .top, .bottom {
+        height: 67vw;
+        width: 63vw;
+        margin: auto;
     }
     .cycle, .cycle-2, .cycle-3, .cycle-4 {
-        height: 32vw;
-        width: 35vw;
+        height: 54vw;
+        width: 57vw;
         padding: 0;
         border-radius: 50% 50% 50% 50% / 33% 33% 67% 67% ;
         margin: 2vw 2.8vw;
     }
     .p1, .p2 {
         padding-top: 0vw;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
     
 }

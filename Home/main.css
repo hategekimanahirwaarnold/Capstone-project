@@ -359,6 +359,7 @@ nav ul li a:hover {
 
     .img-right, .img-side {
         opacity:20%;
+        background-attachment: fixed;
     }
     .nav-img {
         background: url(/img/colors-Rw\ 3.jfif);

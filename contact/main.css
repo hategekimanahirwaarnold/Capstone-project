@@ -83,13 +83,13 @@ header {
     padding: 6px 20px;
     margin: 0px 0px 0px 70px;
     text-transform: uppercase;
+    border-radius: .4em;
+    transition: all .3s;
 }
 
 .logo:hover {
-    background-color: #F8F8F8;
+    color: white;
  /*   box-shadow: 3px -3px gray; */
-    border-radius: .4em;
-    color: gray;
 }
 .home {
     font-size: 25px;
@@ -308,7 +308,7 @@ input {
         top: 0;
         width: 2.3em;
         bottom: 0;
-        height: 120vw;
+        background-attachment: fixed;
     }
     .nav-img {
         background: url(/img/colors-Rw\ 3.jfif);
@@ -367,13 +367,12 @@ input {
     .below-nav {
         display: grid;
         padding: 0;
-        margin: -12vw 0 0 0;
         gap: 0;
     }
     .subscribe {
         margin: auto;
         height: 60vw;
-        width: 70vw;
+        width: 73vw;
         display: flex;
         border-radius: 1vw;
         box-shadow: -2px -2px 2px 2px gray;
@@ -392,8 +391,8 @@ input {
         gap: 2vw;
     }
     .sentence {
-        font-size: 3.3vw;
-        width: 46vw;
+        font-size: 3.7vw;
+        width: 49vw;
         text-align: center;
     }
     .writing img {
@@ -409,7 +408,7 @@ input {
     
     input {
         height: 5.5vw;
-        width: 34vw;
+        width: 37vw;
         border: none;
         box-shadow: -1px -1px 2px 2px #7a7878;
         border-radius: .5vw;
@@ -417,23 +416,12 @@ input {
     }
     
     .subscribe button {
-        border: none;
         height: 7vw;
         width: 18vw;
         margin: auto;
         font-size: 3vw;
-        border-radius: .5vw;
-        line-height: 0;
-        background-color: gray;
-        transition: all .3s;
-        cursor: pointer;
-    }
-    .subscribe button:hover {
-        color: white;
     }
     .social {
-        height: ;
-        margin: 0vw auto;
         display: flex;
         gap: 5vw;
     }
