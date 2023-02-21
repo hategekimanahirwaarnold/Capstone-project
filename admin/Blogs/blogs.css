@@ -3,7 +3,7 @@ html {
     padding: 0;
 }
 body {
-    background: url("/img/background-all") no-repeat;
+    background: url("../img/background-all") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
