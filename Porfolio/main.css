@@ -10,7 +10,7 @@ body {
     color: black;
     margin: 0;
     padding: 0;
-    background: url("/img/background-all") no-repeat;
+    background: url("../img/background-all") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -20,7 +20,7 @@ body {
 }
 .img-side {
     padding: 0;
-    background: url("/Home/img/colors-Rw.jfif") repeat;
+    background: url("../Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
     background-size: 22%;
     bottom: 0;
@@ -33,7 +33,7 @@ body {
 .img-right {
     margin: 0 0 0px 0;
     padding: 0;
-    background: url("/Home/img/colors-Rw.jfif") repeat;
+    background: url("../Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
     background-size: 22%;
     top: 0;
@@ -159,7 +159,7 @@ nav ul li a:hover {
     box-shadow: -3px -4px gray;
 }
 .cycle {
-    background: url(/img/datamanager.jfif);
+    background: url("../img/datamanager.jfif");
     height: 12vw;
     width: 12vw;
     background-size: cover;
@@ -259,7 +259,7 @@ nav ul li a:hover {
         box-shadow: -3px -4px gray;
     }
     .cycle {
-        background: url(/img/datamanager.jfif);
+        background: url("../img/datamanager.jfif");
         height: 16.5vw;
         width: 17vw;
         background-size: cover;
@@ -325,7 +325,7 @@ nav ul li a:hover {
         background-attachment: fixed;
     }
     .nav-img {
-        background: url(/img/colors-Rw\ 3.jfif);
+        background: url("/img/colors-Rw\ 3.jfif");
         margin: -37em 0 0 4.7em;
         height: 6.5em;
         width: 80vw;

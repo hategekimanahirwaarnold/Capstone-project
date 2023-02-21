@@ -21,7 +21,7 @@ body {
     color: black;
     margin: 0;
     padding: 0;
-    background: url("/img/background-all") no-repeat;
+    background: url("../img/background-all") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -352,7 +352,7 @@ i {
         background-attachment: fixed;
     }
     .nav-img {
-        background: url(/img/colors-Rw\ 3.jfif);
+        background: url("../img/colors-Rw\ 3.jfif");
         margin: -37em 0 0 4.7em;
         height: 6.5em;
         width: 80vw;
@@ -380,7 +380,7 @@ i {
         gap: 2em;
     }
     nav ul {
-        background-image: url("/img/background-all");
+        background-image: url("../img/background-all");
         object-fit: contain;
         display: grid;
         gap: 0em;
