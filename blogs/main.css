@@ -57,7 +57,7 @@ header {
     margin-top: 0em;
 }
 .nav-img {
-    background-image: url("/Home/img/colors-Rw.jfif");
+    background-image: url("../Home/img/colors-Rw.jfif");
     width: 100%;
     height: 1.5em;
     margin: 0px 0 0 0;
