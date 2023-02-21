@@ -5,8 +5,8 @@ let input2 = document.querySelector('#input-2');
 
 likebtn.addEventListener('click',()=> {
     input1.value = parseInt(input1.value) + 1;
-    input1.style.color = "gray";
-    likebtn.style.color = "gray";
+    input1.style.color = "green";
+    likebtn.style.color = "green";
 })
 dislikebtn.addEventListener('click',()=> {
     input2.value = parseInt(input2.value) + 1;
