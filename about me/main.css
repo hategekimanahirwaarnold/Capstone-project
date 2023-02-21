@@ -80,10 +80,11 @@ header {
     padding: 6px 20px;
     margin: 0px 0px 0px 70px;
     text-transform: uppercase;
+    transition: all .3s;
 }
 
 .logo:hover {
-    background-color: #F8F8F8;
+    background-color: white;
  /*   box-shadow: 3px -3px gray; */
     border-radius: .4em;
     color: gray;
@@ -110,13 +111,18 @@ nav ul li a {
     font-size: 25px;
     padding: 8px 9px;
     border-radius: .3em;
+    transition: all .3s;
 }
 nav ul li a:hover {
-    background-color: #F8F8F8;
+    background-color: white;
     color: gray;
 }
 .active {
-    background-color: #F8F8F8;
+    background-color: gray;
+    color: white;
+}
+#fa, #fb, #fc, #fd,#fe, #ff, #fg {
+    display: none;
 }
 .below-nav {
     background-image: url("/img/A\ book\ 2-my\ brand\ \(2\).jfif");
@@ -160,7 +166,7 @@ button {
     width: 5vw;
     height: 6vh;
     border: none;
-    border-radius: .8em;
+    border-radius: .6vw;
     background-color: gray;
     color: rgb(2, 2, 2);
     cursor: pointer;
@@ -201,6 +207,9 @@ button:hover {
      }    
 }
 @media (max-width: 717px) {
+    #fa, #fb, #fc, #fd,#fe, #ff, #fg {
+        display: inline;
+    }
      .img-right, .img-side {
         opacity:20%;
         width: 2.3em;
@@ -246,6 +255,7 @@ button:hover {
     }
     nav ul li{
         margin: auto;
+        width: 27vw;
     }
     nav ul li a{
         font-size: 4vw;
@@ -264,6 +274,7 @@ button:hover {
         gap: 1em;
         opacity: 100%;
         background: none;
+        overflow: auto;
     }
    
     .left-side .content {

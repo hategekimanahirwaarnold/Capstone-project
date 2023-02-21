@@ -83,13 +83,14 @@ header {
     padding: 6px 20px;
     margin: 0px 0px 0px 70px;
     text-transform: uppercase;
-    border-radius: .4em;
     transition: all .3s;
 }
 
 .logo:hover {
-    color: white;
+    background-color: white;
  /*   box-shadow: 3px -3px gray; */
+    border-radius: .4em;
+    color: gray;
 }
 .home {
     font-size: 25px;
@@ -116,14 +117,15 @@ nav ul li a {
     transition: all .3s;
 }
 nav ul li a:hover {
-    color: white;
+    background-color: white;
+    color: gray;
 }
 .active {
-    background-color: #F8F8F8;
-    color: black;
+    background-color: gray;
+    color: white;
 }
-.active:hover {
-    color: black;
+#fa, #fb, #fc, #fd,#fe, #ff, #fg {
+    display: none;
 }
 
 .below-nav {
@@ -216,7 +218,6 @@ input {
         padding: .3em;
     }
     .img-side, .img-right {
-        width: 5vw;
     }
     .logo {
         font-size: 3.2vw;
@@ -231,27 +232,19 @@ input {
         margin: auto;
         height: 38vw;
         width: 50vw;
-        display: flex;
-        border-radius: .8vw;
-        box-shadow: -2px -2px 2px 2px gray;
     }
     .usb {
         width: 14vw;
-        background-attachment: fixed;
-        object-fit: cover;
-        object-position: center;
         height: 35vw;
         margin: auto;
     }
     .writing {
         padding: 1.7vw 0 0vw 2vw;
-        display: grid;
         gap: 2vw;
     }
     .sentence {
         font-size: 2.3vw;
         width: 32vw;
-        text-align: center;
     }
     .writing img {
         height: 6vw;
@@ -259,7 +252,6 @@ input {
         margin: -1.5vw 0 0 0;
     }
     .name, .email {
-        display: flex;
         gap: 2vw;
         margin: -2vw 0 0vw .8vw;
     }
@@ -268,8 +260,6 @@ input {
         height: 4vw;
         width: 25vw;
         border: none;
-        box-shadow: -1px -1px 2px 2px #7a7878;
-        border-radius: .5vw;
         font-size: 1.5vw;
     }
     
@@ -277,20 +267,10 @@ input {
         border: none;
         height: 4.5vw;
         width: 13vw;
-        margin: auto;
         font-size: 2vw;
-        border-radius: .5vw;
         line-height: 0;
-        background-color: gray;
-        transition: all .3s;
-        cursor: pointer;
-    }
-    .subscribe button:hover {
-        color: white;
     }
     .social {
-        background-color: ;
-        height: ;
         margin: 0vw auto 0 auto;
         display: flex;
         gap: 4vw;
@@ -302,6 +282,9 @@ input {
 }
 
 @media (max-width: 717px) {
+    #fa, #fb, #fc, #fd,#fe, #ff, #fg {
+        display: inline;
+    }
     
     .img-right, .img-side {
         opacity:20%;
@@ -341,6 +324,7 @@ input {
     }
     nav ul li{
         margin: auto;
+        width: 27vw;
     }
     nav ul li a{
         font-size: 4vw;

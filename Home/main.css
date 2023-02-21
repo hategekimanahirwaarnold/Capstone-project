@@ -23,9 +23,11 @@ body {
     padding: 0;
     background: url("/img/background-all") no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
     position: relative;
+    min-width: 300px;
 }
 .img-side {
     padding: 0;
@@ -33,6 +35,7 @@ body {
     background-attachment: fixed;
     background-size: 22%;
     bottom: 0;
+    top: 0;
     width: 3em;
     position: absolute;
     height: 100%;
@@ -44,6 +47,7 @@ body {
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
     background-size: 22%;
+    top: 0;
     bottom: 0;
     right: 0;
     width: 3em;
@@ -90,10 +94,11 @@ header {
     padding: 6px 20px;
     margin: 0px 0px 0px 70px;
     text-transform: uppercase;
+    transition: all .3s;
 }
 
 .logo:hover {
-    background-color: #F8F8F8;
+    background-color: white;
  /*   box-shadow: 3px -3px gray; */
     border-radius: .4em;
     color: gray;
@@ -119,12 +124,16 @@ nav ul li a {
     color: black;
     font-size: 25px;
     padding: 8px 9px;
+    border-radius: .3em;
+    transition: all .3s;
 }
 nav ul li a:hover {
-    background-color: #F8F8F8;
-/*    box-shadow: 2px -2px gray; */
-    border-radius: .3em;
+    background-color: white;
     color: gray;
+}
+.active {
+    background-color: gray;
+    color: white;
 }
 
 .below-nav {
@@ -144,6 +153,9 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: -2px -2px 2px 2px gray;
     object-fit: cover;
+}
+i {
+    display: none;
 }
 
 .below-profile { 
@@ -237,31 +249,6 @@ nav ul li a:hover {
     width: 2.5em;
     transform: translateX(10px);
 }
-
-@media (max-width: 1535px) and (min-width: 1367px) {
-   
-    .below-nav {
-        justify-content: space-around;
-        
-    }
-    .left-side {
-        margin: 0 0 0 100px;
-    } 
-    .right-side {
-        margin: 0 100px 0 0;
-    }
-    .begin {
-        background-color: ;
-    }
-    header {
-        display: flex;
-    }
-    nav ul {
-        display: flex;
-        margin-left: 0px;
-    }
-
- }  
  @media (max-width: 1110px) {
     
     nav ul {
@@ -354,6 +341,9 @@ nav ul li a:hover {
     }
     
  }
+ #fa, #fb, #fc, #fd,#fe, #ff, #fg {
+    display: none;
+}
   
 @media all and (max-width: 750px) {
 
@@ -368,6 +358,9 @@ nav ul li a:hover {
         width: 80vw;
         opacity: 10%;
         position: relative;
+    }
+    #fa, #fb, #fc, #fd,#fe, #ff, #fg {
+        display: inline;
     }
     #menu-icon {
         color: black;
@@ -390,7 +383,7 @@ nav ul li a:hover {
         background-image: url("/img/background-all");
         object-fit: contain;
         display: grid;
-        gap: 3em;
+        gap: 0em;
         position: relative;
         margin-top: 0px;
         padding:  30px 20px 30px 20px;
@@ -399,8 +392,10 @@ nav ul li a:hover {
         width: 50vw;
         height: 70vh;
     }
+    
     nav ul li{
         margin: auto;
+        width: 27vw;
     }
     nav ul li a{
         font-size: 4vw;

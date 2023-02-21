@@ -83,10 +83,11 @@ header {
     padding: 6px 20px;
     margin: 0px 0px 0px 70px;
     text-transform: uppercase;
+    transition: all .3s;
 }
 
 .logo:hover {
-    background-color: #F8F8F8;
+    background-color: white;
  /*   box-shadow: 3px -3px gray; */
     border-radius: .4em;
     color: gray;
@@ -116,16 +117,17 @@ nav ul li a {
     transition: all .3s;
 }
 nav ul li a:hover {
-    color: white;
+    background-color: white;
+    color: gray;
 }
 .active {
-    background-color: #F8F8F8;
-    color: black;
+    background-color: gray;
+    color: white;
 }
-.active:hover {
-    color: black;
+#fa, #fb, #fc, #fd,#fe, #ff, #fg {
+    display: none;
 }
-
+  
 
 .below-nav {
     margin: 0vw 0 3vw 0;
@@ -316,7 +318,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 717px) {
-    
+    #fa, #fb, #fc, #fd,#fe, #ff, #fg {
+        display: inline;
+    }
      .img-right, .img-side {
         opacity:20%;
         width: 2.3em;
@@ -353,8 +357,10 @@ nav ul li a:hover {
         width: 50vw;
         height: 70vh;
     }
+   
     nav ul li{
         margin: auto;
+        width: 27vw;
     }
     nav ul li a{
         font-size: 4vw;

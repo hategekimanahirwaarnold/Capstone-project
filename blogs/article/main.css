@@ -76,6 +76,7 @@ header {
     display: none;
 }
 
+
 .logo {
     text-decoration: none;
     color: black;
@@ -83,13 +84,14 @@ header {
     padding: 6px 20px;
     margin: 0px 0px 0px 70px;
     text-transform: uppercase;
-    border-radius: .4em;
     transition: all .3s;
 }
 
 .logo:hover {
-    color: white;
+    background-color: white;
  /*   box-shadow: 3px -3px gray; */
+    border-radius: .4em;
+    color: gray;
 }
 .home {
     font-size: 25px;
@@ -116,14 +118,15 @@ nav ul li a {
     transition: all .3s;
 }
 nav ul li a:hover {
-    color: white;
+    background-color: white;
+    color: gray;
 }
 .active {
-    background-color: #F8F8F8;
-    color: black;
+    background-color: gray;
+    color: white;
 }
-.active:hover {
-    color: black;
+#fa, #fb, #fc, #fd,#fe, #ff, #fg {
+    display: none;
 }
 .below-nav {
     background-image: url("/img/A\ book\ 2-my\ brand\ \(2\).jfif");
@@ -193,13 +196,14 @@ article {
     border-radius: .4vw;
     box-shadow: -.1vw -.1vw 0.2vw 0vw black;
 }
-input {
+textarea {
     height: 4vw;
     width: 22.8vw;
     border: none;
     margin: auto 2vw -.5vw 0vw;
     border-radius: .3vw;
     font-size: 1vw;
+    outline: none;
 }
 .right-side .comment {
     height: fit-content;
@@ -216,25 +220,34 @@ input {
     padding: 0vw 1vw ;
 }
 
-.number-1, .number-2 {
-    padding: 0;
-    height: 1em;
-}
+
 .like {
     width: 33vw;
     display: flex;
     justify-content: space-evenly;
 }
 .left, .right {
+    margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-.like img {
-    height: 2em;
-}
-button {
+#input-1, #input-2 {
+    padding: 0;
+    margin: auto;
+    height: 2vw;
+    width: 3vw;
+    font-size: 1.5vw;
+    text-align: center;
     border: none;
     background: none;
+    pointer-events: none;
+}
+button {
+    margin: auto;
+    font-size: 2vw;
+    border: none;
+    background: none;
+    color: black;
 }
 @media (max-width: 1060px) {
     nav ul {
@@ -290,7 +303,7 @@ button {
        width: 6vw;
        margin: 2vw auto;
    }
-   input {
+   textarea{
        font-size: 1.2vw;
    }
    .right-side .comment {
@@ -299,6 +312,9 @@ button {
 }
 
 @media (max-width: 717px) {
+    #fa, #fb, #fc, #fd,#fe, #ff, #fg {
+        display: inline;
+    }
     
      .img-right, .img-side {
         opacity:20%;
@@ -336,8 +352,10 @@ button {
         width: 50vw;
         height: 70vh;
     }
+   
     nav ul li{
         margin: auto;
+        width: 27vw;
     }
     nav ul li a{
         font-size: 4vw;
@@ -399,6 +417,18 @@ button {
         display: flex;
         justify-content: space-between;
     }
+    #input-1, #input-2 {
+        height: 4vw;
+        width: 4vw;
+        font-size: 2vw;
+    }
+    button {
+        margin: auto;
+        font-size: 3vw;
+        border: none;
+        background: none;
+    
+    }
     .right-side {
         width: 80vw;
         height: 50vw;
@@ -410,7 +440,7 @@ button {
        width: 11vw;
        margin: 3vw auto;
    }
-   input {
+   textarea{
        font-size: 2.4vw;
        height: 8vw;
        width: 56vw;

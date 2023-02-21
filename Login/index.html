@@ -6,42 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY BRAND</title>
     <link rel="stylesheet" href="/Login/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="img-side"><p></p></div>
     <div class="begin">   
         <header>
-                <a class="logo" href="/Home/index.html">HIRWA</a>
-                <nav>
-                        <ul>
-                            <li><a href="/about me/index.html">About Me</a></li>
-                            <li><a href="/Skills/index.html">Skills</a></li>
-                            <li><a href="/Porfolio/index.html">Portfolio</a></li>
-                            <li><a href="/blogs/index.html">Blogs</a></li>
-                            <li><a href="/contact/index.html">Contact Me</a></li>
-                        </ul>
-                </nav>
+            <input type="checkbox" id="check">
+            <label for="check"  class="fa fa-bars" id="menu-icon"></label>
+            <a class="logo" href="/Home/index.html"><i id="fa" class="fa fa-home"></i>Hirwa</a>
+            <nav>
+                <ul>
+                    <li class="home"><a href="/Home/index.html"><i id="fb"  class="fa fa-home"></i>HIRWA</a></li>
+                    <li><a href="/about me/index.html" ><i id="fc"  class="fa fa-address-book" aria-hidden="true"></i> About Me</a></li>
+                    <li><a href="/Skills/index.html"><i id="fd"  class="fa fa-lightbulb-o"></i>Skills</a></li>
+                    <li><a href="/Porfolio/index.html"><i id="fe"  class="fa fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="/blogs/index.html"><i id="ff"  class="fa fa-th-large"></i>Blogs</a></li> 
+                    <li><a href="/contact/index.html"><i id="fg"  class="fa fa-usb"></i>Contact Me</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="nav-img"><p></p></div>
     </div> 
             <div class="below-nav">
                 <div class="left-side">
                    <h2>Sign UP</h2>
-                   <input type="text" value="username/email"> 
-                   <input type="text" value="password"> 
-                   <input type="text" value="phone"> 
+                   <input type="text" placeholder="user name" name="user name" required>
+                   <input type="password" placeholder="Enter Password" name="password" required>
+                   <input type="password" placeholder="Confirm Password" name="password" required>
                    <button><p>Sign up</p></button>
                    <p class="or">or</p>
                    <button><p>Sign up with google</p> <img src="/img/google.png" alt=""></button>
                 </div>   
                 <div class="right-side">
                     <h2>Login</h2>
-                    <input type="text" value="username/email"> 
-                    <input type="text" value="password"> 
-                    <input type="text" value="phone">
+                    <input type="text" placeholder="user name" name="user name" required>
+                    <input type="password" placeholder="Enter Password" name="password" required>
                     <button><p>Login</p></button>
                     <p class="or">or</p>
                     <button><p>Login with google</p> <img src="/img/google.png" alt=""></button>
+                    <a class="admin" href="/admin/login/login.html">Admin</a>
                 </div>
             </div>
     <div class="img-right"><p></p></div>

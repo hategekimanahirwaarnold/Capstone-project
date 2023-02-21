@@ -12,7 +12,6 @@ body {
     padding: 0;
     background: url("/img/background-all") no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -24,10 +23,9 @@ body {
     background-attachment: fixed;
     background-size: 22%;
     bottom: 0;
-    top: 0;
     width: 3em;
     position: absolute;
-    min-height: 100vh;
+    height: 100%;
 }
 
 .img-right {
@@ -36,12 +34,11 @@ body {
     background: url("/Home/img/colors-Rw.jfif") repeat;
     background-attachment: fixed;
     background-size: 22%;
-    top: 0;
     bottom: 0;
     right: 0;
     width: 3em;
     position: absolute;
-    min-height: 100%;
+    height: 100%;
 }
 .begin {
     display: grid;
@@ -83,10 +80,11 @@ header {
     padding: 6px 20px;
     margin: 0px 0px 0px 70px;
     text-transform: uppercase;
+    transition: all .3s;
 }
 
 .logo:hover {
-    background-color: #F8F8F8;
+    background-color: white;
  /*   box-shadow: 3px -3px gray; */
     border-radius: .4em;
     color: gray;
@@ -112,12 +110,19 @@ nav ul li a {
     color: black;
     font-size: 25px;
     padding: 8px 9px;
+    border-radius: .3em;
+    transition: all .3s;
 }
 nav ul li a:hover {
-    background-color: #F8F8F8;
-/*    box-shadow: 2px -2px gray; */
-    border-radius: .3em;
+    background-color: white;
     color: gray;
+}
+.active {
+    background-color: gray;
+    color: white;
+}
+#fa, #fb, #fc, #fd,#fe, #ff, #fg {
+    display: none;
 }
 .below-nav {
     background-image: url("/img/A\ book\ 2-my\ brand\ \(2\).jfif");
@@ -208,7 +213,7 @@ main {
 .left-but {
     width: 5vw;
     height: 4vh;
-    border-radius: .8em;
+    border-radius: .6vw;
     background-color: gray;
     margin: 0 0 0 1vw;
     cursor: pointer;
@@ -277,11 +282,13 @@ main {
 
 @media (max-width: 717px) {
     
-    header {
+    #fa, #fb, #fc, #fd,#fe, #ff, #fg {
+        display: inline;
     }
      .img-right, .img-side {
         opacity:20%;
         width: 2.3em;
+        bottom: 0;
         background-attachment: fixed;
     }
     .nav-img {
@@ -322,8 +329,10 @@ main {
         width: 50vw;
         height: 70vh;
     }
+   
     nav ul li{
         margin: auto;
+        width: 27vw;
     }
     nav ul li a{
         font-size: 4vw;
@@ -343,6 +352,7 @@ main {
         opacity: 100%;
         background: none;
         margin: auto;
+        overflow: auto;
     }
     h2 {
         font-size: 4vw;
@@ -369,6 +379,7 @@ main {
         line-height: 3.6vh;
     }
     .right {
+        margin-left: -6vw;
         gap: 1.3em;
     }
     .right-1 {
@@ -381,14 +392,13 @@ main {
         height: 7em;
         margin: .3em 0 0 .7vw;
     }
-    .left-but {
+    .left-but{
         border-radius: 1vw;
         text-decoration: none;
-        width: 8vw;
-        float: left;
-        padding: .5em .6em;
-        margin: 2em 0 0 0;
-        font-size: 2.5vw;
+        line-height: 5vw;
+        padding: .9em 2em;
+        margin: 2em auto auto 0;
+        font-size: 2.6vw;
     }
     
 }
